@@ -1,0 +1,26 @@
+{
+  "name": "wait-ui",
+  "version": "1.0.0",
+  "description": "Wait a bit before starting handle user interaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wait for",
+    "ui",
+    "delay"
+  ],
+  "author": "Tao Wang",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taowangpro/wait.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taowangpro/wait/issues"
+  },
+  "homepage": "https://github.com/taowangpro/wait#readme"
+}
