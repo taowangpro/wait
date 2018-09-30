@@ -1,13 +1,15 @@
 'use strict';
 
-module.exports = function (fn, msec) {
+module.exports = function (fn, msec, scope) {
   var timer = null;
+
+  var delayFn = function(args) {
+    timer = null;
+    fn.apply(scope, args); 
+  };
 
   return function(){
     timer && clearTimeout(timer);
-    timer = setTimeout(function(scope, args) {
-      timer = null;
-      fn.apply(scope, args); 
-    }, msec, this, [].slice.call(arguments));
+    timer = setTimeout(delayFn, msec, [].slice.call(arguments));
   };
 };
