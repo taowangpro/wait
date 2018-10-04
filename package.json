@@ -1,6 +1,6 @@
 {
   "name": "wait-ui",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Wait a bit before starting handle user interaction",
   "main": "index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # wait-ui
 
-> Wait for a certain amount quilt time before calling function execution.
+> Wait for a certain amount quiet time before calling function execution.
 > It is purposely slow down the response for user's interaction.
 
 # Why
@@ -19,11 +19,11 @@ waitUI(fn, msec, scope);
 ## Usage
 ```
 // set up component
-[component].onMouseover(waitUI(this.handleMouseover, 300, scope))
+[component].onMouseover(waitUI(this.handleMouseover, 300, this))
 
 // the very last mouseover event happen 300ms ago
 handleMouseover(event) {
-  // this is scope
+  // this is this
   ...
 }
 
